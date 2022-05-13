@@ -10,3 +10,22 @@ header::before {
 .header-bg2::before {
     background: linear-gradient(189.97deg, #000000 23.57%, rgba(0, 0, 0, 0.41) 45.76%, rgba(0, 0, 0, 0.6) 66.13%, rgba(0, 0, 0, 0) 86.25%);
 }
+
+/* .show-me {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: all 0.7s ease;
+}
+
+.card {
+    transform: scale(1.3);
+} */
+
+.slick-list {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.all-course-sliders:hover .slick-arrow span {
+    display: inline-block !important;
+}
