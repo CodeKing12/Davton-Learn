@@ -1,0 +1,12 @@
+header{
+    /* background: linear-gradient(189.97deg, rgba(0, 0, 0, 0.69) 23.57%, rgba(0, 0, 0, 0.31) 45.76%, rgba(0, 0, 0, 0.54) 66.13%, rgba(0, 0, 0, 0) 86.25%), url('../images/header-bg.png');  */
+    background: url('../images/header-bg.png');
+}
+
+header::before {
+    background: linear-gradient(189.97deg, rgba(0, 0, 0, 0.69) 23.57%, rgba(0, 0, 0, 0.31) 45.76%, rgba(0, 0, 0, 0.54) 66.13%, rgba(0, 0, 0, 0) 86.25%);
+}
+
+.header-bg2::before {
+    background: linear-gradient(189.97deg, #000000 23.57%, rgba(0, 0, 0, 0.41) 45.76%, rgba(0, 0, 0, 0.6) 66.13%, rgba(0, 0, 0, 0) 86.25%);
+}
