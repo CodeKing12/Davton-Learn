@@ -647,6 +647,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3.5rem;
 }
 
+.mt-44{
+  margin-top: 11rem;
+}
+
 .block{
   display: block;
 }
@@ -827,6 +831,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 83.333333%;
 }
 
+.w-5{
+  width: 1.25rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
 .max-w-\[60\%\]{
   max-width: 60%;
 }
@@ -908,6 +920,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2.25rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-40{
+  gap: 10rem;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -918,6 +938,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .border-2{
@@ -957,12 +981,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#c4c4c4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(196 196 196 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
 }
 
 .bg-opacity-30{
   --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-60{
+  --tw-bg-opacity: 0.6;
 }
 
 .bg-cover{
@@ -977,6 +1010,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .object-fill{
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .py-7{
@@ -1084,6 +1121,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 4rem;
 }
 
+.px-44{
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
 .pl-5{
   padding-left: 1.25rem;
 }
@@ -1118,6 +1160,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-16{
   padding-bottom: 4rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .font-poppins{
@@ -1321,6 +1367,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-opacity-40{
   --tw-text-opacity: 0.4;
+}
+
+.text-opacity-50{
+  --tw-text-opacity: 0.5;
 }
 
 .opacity-0{
