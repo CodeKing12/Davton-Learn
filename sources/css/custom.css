@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 header{
     /* background: linear-gradient(189.97deg, rgba(0, 0, 0, 0.69) 23.57%, rgba(0, 0, 0, 0.31) 45.76%, rgba(0, 0, 0, 0.54) 66.13%, rgba(0, 0, 0, 0) 86.25%), url('../images/header-bg.png');  */
     background: url('../images/header-bg.png');
@@ -12,8 +16,9 @@ header::before {
 }
 
 .show-me {
-    visibility: visible !important;
-    opacity: 1 !important;
+    /* visibility: visible !important;
+    opacity: 1 !important; */
+    display: block;
     transition: all 0.7s ease;
 }
 
@@ -24,7 +29,7 @@ header::before {
 .slick-list {
     margin-left: 3rem;
     margin-right: 3rem;
-    /* overflow: visible; */
+    overflow: visible;
 }
 
 .all-course-sliders:hover .slick-arrow {
@@ -49,4 +54,16 @@ header::before {
     background-size: cover;
     /* backdrop-filter: blur(10px); */
     /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+@media (max-width: 650px) {
+    .hide-sm {
+        display: none
+    }
+}
+
+@media (max-width: 440px) {
+    .hide-xsm {
+        display: none !important;
+    }
 }
