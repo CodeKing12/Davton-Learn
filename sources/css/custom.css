@@ -1,3 +1,28 @@
+/* fallback */
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 600;
+    src: url(google-icons.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+
 header{
     /* background: linear-gradient(189.97deg, rgba(0, 0, 0, 0.69) 23.57%, rgba(0, 0, 0, 0.31) 45.76%, rgba(0, 0, 0, 0.54) 66.13%, rgba(0, 0, 0, 0) 86.25%), url('../images/header-bg.png');  */
     background: url('../images/header-bg.png');
