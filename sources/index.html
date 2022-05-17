@@ -104,7 +104,7 @@
             <img class="mt-1" src="images/davton-logo.svg">
             <h3 class="uppercase font-bold text-xl mb-2">Project Management</h3>
             <h1 class="uppercase font-extrabold text-6xl text-[67px] mb-3">The Essential</h1>
-            <p class="w-8/12 md:w-8/12 lg:5/12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
+            <p class="w-full sm:w-8/12 md:w-8/12 lg:5/12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
             <div class="mt-8 flex gap-3">
                 <button class="bg-white px-7 py-3 text-brand-pink rounded-md font-semibold hover:bg-brand-pink hover:text-white transition-all duration-100 ease-linear hover:duration-150">Watch Now</button>
                 <button class="flex items-center pl-5 px-7 py-3 border-2 border-white rounded-md gap-3 font-semibold hover:bg-white hover:text-brand-pink transition-all duration-100 ease-linear hover:duration-150">
@@ -125,13 +125,14 @@
                         <img class="w-auto h-40" src="images/course-img.png">
                         <h4 class="leading-[21px] w-min uppercase font-bold absolute text-lg bottom-4 left-3">Project Management</h4>
                     </div>
-                    <div onmouseenter="openCard(this)" onmouseleave="closeCard(this)" class="relative mr-2 drop-shadow-[0px_4px_20px_rgba(0,0,0,0.8)] card transition-all duration-200 ease-linear z-20 w-[290px]">
+                    <!-- onmouseenter="openCard(this)" onmouseleave="closeCard(this)" -->
+                    <div class="absolute mr-2 drop-shadow-[0px_4px_20px_rgba(0,0,0,0.8)] card transition-all duration-200 ease-linear z-20 w-0 h-0 xxl:w-[290px] the-card">
                         <div class="relative">                       
                             <img class="absolute !w-auto top-4 left-3" src="images/davton-logo.svg">
-                            <img class="!w-full object-cover image h-36" src="images/course-img.png">
-                            <h4 class="leading-6 uppercase font-bold absolute text-lg bottom-8 w-min text-brand-yellow left-3">Project Management</h4>
+                            <img class="!w-full object-cover image h-40" src="images/course-img.png">
+                            <h4 class="card-title leading-6 uppercase font-bold text-lg bottom-8 w-0 xxl:w-min text-brand-yellow left-3 invisible">Project Management</h4>
                         </div>
-                        <div class="bg-[#141414] px-6 py-4 hidden">
+                        <div class="bg-[#141414] px-6 py-4 course-action xxl:w-0 xxl:h-0">
                             <div class="flex justify-between items-center mb-5">
                                 <span class="material-symbols-outlined !text-[45px]">
                                     play_circle
@@ -148,8 +149,8 @@
                             </div>
                             <p class="uppercase text-[17px] font-medium">Project Management</p>
                         </div>
-                    </div>
-                    <div class="relative mr-2">
+                    </div> 
+                    <div class="relative mr-2" onmouseover="bringOut()" onmouseout="removeCard()">
                         <img class="absolute top-4 left-3" src="images/davton-logo.svg">
                         <img class="w-auto h-40" src="images/course-img.png">
                         <h4 class="leading-[21px] w-min uppercase font-bold absolute text-lg bottom-4 left-3">Project Management</h4>
@@ -293,8 +294,8 @@
         </div>
     </header>
 
-    <div class="py-6 pb-16 px-12 h-[550px] flex gap-9 colorful-section items-center justify-center">
-        <img class="h-auto w-[770px] max-w-[50%] xxl:w-[50%]" style="transform: rotateY(180deg);" src="images/bigstock-Happy-Joyful-Businesswoman-Dra-366041386 1.png">
+    <div class="py-10 lg:py-6 pb-16 px-12 lg:h-[550px] flex flex-col lg:flex-row gap-9 colorful-section items-center justify-center">
+        <img class="h-auto order-last lg:order-first w-[650px] lg:w-[770px] lg:max-w-[50%] xxl:w-[50%]" style="transform: rotateY(180deg);" src="images/bigstock-Happy-Joyful-Businesswoman-Dra-366041386 1.png">
         <div class="z-10 relative mb-5 text-white">
             <h3 class="uppercase font-bold text-xl mb-2">Project Management</h3>
             <h1 class="uppercase font-semibold text-6xl mb-3">Featured Video</h1>
@@ -671,7 +672,7 @@
         </div>
     </div>
 
-    <footer class="flex mt-44 text-white px-44 pb-28 justify-around">
+    <footer class="flex gap-16 px-14 md:px-20 md:flex-row mt-44 text-white lg:px-44 pb-28 justify-around flex-wrap lg:flex-nowrap">
         <div>
             <p class="font-medium mb-5">Follow Us</p>
             <div class="mb-5 flex gap-4">

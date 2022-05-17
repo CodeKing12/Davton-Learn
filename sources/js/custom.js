@@ -42,6 +42,14 @@ function closeMenu() {
     document.querySelector("body").style.overflow = "scroll";
 }
 
+function bringOut() {
+    document.querySelector(".the-card").classList.add("pop-card")
+}
+
+function removeCard() {
+    document.querySelector(".the-card").classList.remove("pop-card")
+}
+
 // course_sliders = document.querySelectorAll(".all-course-sliders")[0]
 
 // course_sliders.forEach(el => el.onmouseover = function(){
