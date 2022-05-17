@@ -11,8 +11,9 @@ $(".course-slider-1").slick({
 function openCard (element) {
     card = element.children[1]
     element.classList.add("pop-out")
-    card.classList.add("show-me")
+    card.classList.add("show-me", "px-6", "py-4")
     imageCard = element.children[0]
+    element.parentElement.parentElement.style.zIndex = "2000"
     // imageCard.children[1].classList.remove("h-36")
     // imageCard.children[1].classList.add("h-[186px]")
 }
@@ -20,7 +21,8 @@ function openCard (element) {
 function closeCard (element) {
     card = element.children[1]
     element.classList.remove("pop-out")
-    card.classList.remove("show-me")
+    card.classList.remove("show-me", "px-6", "py-4")
+    element.parentElement.parentElement.style.zIndex = "20"
     // imageCard.children[1].classList.remove("h-[186px]")
     // imageCard.children[1].classList.add("h-36")
 } 

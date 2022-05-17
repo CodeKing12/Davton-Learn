@@ -39,17 +39,31 @@ header::before {
 .show-me {
     visibility: visible !important;
     opacity: 1 !important;
-    transition: all 0.7s ease;
+    width: max-content;
+    height: max-content;
+    max-width: 100%;
+    top: 100%;
+    transition: visibility 1s ease, opacity 1s ease, width 1.5s ease, height 1.5s ease;
 }
 
 .pop-out {
-    transform: scale(1.3);
+    z-index: 2000;
+    transform: scale(1.2) translateY(-50px);
+    transition: all ease-out 0.5s;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.pop-out h4 {
+    color: #FFED4F !important;
 }
 
 .slick-list {
     margin-left: 3rem;
     margin-right: 3rem;
-    /* overflow: visible; */
+    overflow: visible;
+    z-index: 100;
 }
 
 .all-course-sliders:hover .slick-arrow {
@@ -85,41 +99,5 @@ header::before {
 @media (max-width: 440px) {
     .hide-xsm {
         display: none !important;
-    }
-}
-
-.pop-card {
-    /* animation: showCard 3s ease-in-out; */
-    width: 284px;
-    height: auto;
-    transition: all .1s ease-in;
-    position: absolute !important;
-}
-
-.pop-card .course-action {
-    transition: all .1s ease-in;
-    /* width: 284px;
-    height: auto */
-}
-
-.the-card {
-    /* position: relative; */
-    transition: all .5s ease-out;
-}
-
-.pop-card .card-title {
-    position: absolute !important;
-    visibility: visible;
-}
-
-@keyframes showCard {
-    0% {
-        width: 0;
-        height: 0;
-    }
-
-    100% {
-        width: 300px;
-        height: 300px;
     }
 }

@@ -534,6 +534,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.bottom-6{
+  bottom: 1.5rem;
+}
+
+.bottom-9{
+  bottom: 2.25rem;
+}
+
 .z-50{
   z-index: 50;
 }
@@ -762,12 +770,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 650px;
 }
 
+.min-w-max{
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .max-w-\[50\%\]{
   max-width: 50%;
 }
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-\[80\%\]{
+  max-width: 80%;
+}
+
+.max-w-\[60\%\]{
+  max-width: 60%;
 }
 
 .transform{
@@ -864,6 +886,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .rounded{
@@ -1184,6 +1210,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-100{
   opacity: 1;
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 .blur{
