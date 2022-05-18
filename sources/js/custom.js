@@ -14,6 +14,7 @@ function openCard (element) {
     card.classList.add("show-me", "px-6", "py-4")
     imageCard = element.children[0]
     element.parentElement.parentElement.style.zIndex = "2000"
+    // imageCard.lastElementChild.
     // imageCard.children[1].classList.remove("h-36")
     // imageCard.children[1].classList.add("h-[186px]")
 }

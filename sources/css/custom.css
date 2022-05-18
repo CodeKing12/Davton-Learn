@@ -57,6 +57,7 @@ header::before {
 
 .pop-out h4 {
     color: #FFED4F !important;
+    bottom: 1rem;
 }
 
 .slick-list {
@@ -100,4 +101,8 @@ header::before {
     .hide-xsm {
         display: none !important;
     }
+}
+
+.card:hover .to-remove {
+    display: none;
 }
