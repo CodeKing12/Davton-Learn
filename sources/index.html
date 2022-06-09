@@ -117,7 +117,7 @@
             <h1 class="uppercase font-extrabold text-6xl text-[67px] mb-3">The Essential</h1>
             <p class="w-full sm:w-8/12 md:w-8/12 lg:5/12">Understand your audience, envision a creative solution, and test your prototype by Cooper Professional Education | By Cooper Professional Education</p>
             <div class="mt-8 flex gap-3">
-                <button class="bg-white px-7 py-3 text-brand-pink rounded-md font-semibold hover:bg-brand-pink hover:text-white transition-all duration-100 ease-linear hover:duration-150">Watch Now</button>
+                <button class="bg-white px-7 py-3 text-brand-pink rounded-md font-semibold hover:bg-brand-pink hover:text-white transition-all duration-100 ease-linear hover:duration-150" data-micromodal-trigger="video-modal">Watch Now</button>
                 <button class="flex items-center pl-5 px-7 py-3 border-2 border-white rounded-md gap-3 font-semibold hover:bg-white hover:text-brand-pink transition-all duration-100 ease-linear hover:duration-150">
                     <span class="material-symbols-outlined">
                         info
@@ -708,10 +708,16 @@
 
 
 
-    <video class="w-10/12 mx-auto" id="player" playsinline controls data-poster="images/modal-thumbnail.png">
-        <source src="/path/to/video.mp4" type="video/mp4" />
-        <source src="images/test-video.webm" type="video/webm" />
-    </video>
+    <div class="modal micromodal-slide" id="video-modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+                <video class="w-full mx-auto" id="player" playsinline controls data-poster="images/modal-thumbnail.png">
+                    <source src="/path/to/video.mp4" type="video/mp4" />
+                    <source src="images/test-video.webm" type="video/webm" />
+                </video>
+          </div>
+        </div>
+      </div>
 
     <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
