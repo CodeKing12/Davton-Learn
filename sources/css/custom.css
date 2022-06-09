@@ -56,7 +56,7 @@ header::before {
 }
 
 .pop-out h4 {
-    color: #FFED4F !important;
+    /* color: #FFED4F !important; */
     bottom: 1rem;
 }
 
@@ -105,4 +105,11 @@ header::before {
 
 .card:hover .to-remove {
     display: none;
+}
+
+.show-us {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    transition: all 300ms ease-out;
 }

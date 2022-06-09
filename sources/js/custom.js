@@ -53,6 +53,10 @@ function removeCard() {
     document.querySelector(".the-card").classList.remove("pop-card")
 }
 
+function showDropdown() {
+    $('.profileDropdown').toggleClass("show-us")
+}
+
 // course_sliders = document.querySelectorAll(".all-course-sliders")[0]
 
 // course_sliders.forEach(el => el.onmouseover = function(){
