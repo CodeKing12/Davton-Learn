@@ -700,55 +700,25 @@
     </header>
     
 
-    <!-- <div class="w-10/12 mx-auto mt-10">
-        <img src="images/modal-thumbnail.png">
-    </div> -->
-
-    <button class="mt-10 px-4 py-2 bg-brand-pink text-white" data-micromodal-trigger="news-modal">Show Modal</button>
-
-
 
     <div class="modal micromodal-slide" id="video-modal" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+            <div class="modal__container bg-white max-w-[95%] max-h-[95%] rounded-md w-[85%] sm:w-[80%] lg:w-[80%] xl:w-[80%] h-fit" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
                 <video class="w-full mx-auto" id="player" playsinline controls data-poster="images/modal-thumbnail.png">
                     <source src="/path/to/video.mp4" type="video/mp4" />
                     <source src="images/test-video.webm" type="video/webm" />
                 </video>
-          </div>
+            </div>
         </div>
-      </div>
+    </div>
 
-    <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal micromodal-slide" id="news-modal" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-            <header class="modal__header">
-              <h2 class="modal__title" id="modal-1-title">
-                Micromodal
-              </h2>
-              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-            </header>
-            <main class="modal__content" id="modal-1-content">
-              <p>
-                Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
-              </p>
-            </main>
-            <footer class="modal__footer">
-              <button class="modal__btn modal__btn-primary">Continue</button>
-              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
-            </footer>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="modal micromodal-slide" id="news-modal" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
-            <img class="w-full max-h-[325px]" src="images/modal-img.png">
-            <div class="h-full pt-16 pb-10 px-[70px] bg-white max-h-[500px] overflow-y-scroll">
-                <div class="">
-                    <div class="flex justify-between items-center">
-                        <h2 class="uppercase font-semibold text-2xl max-w-[70%]">Seed Funding: Y combinators $ 3million to Promote E-learning platform</h2>
+            <div class="modal__container bg-white max-w-[95%] max-h-[95%] rounded-md w-[85%] sm:w-[80%] lg:w-[77%] xl:w-[68%] h-fit" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+                <img class="w-full object-cover h-[35vh]" src="images/modal-img.png">
+                <div class="w-full h-[60vh] pt-10 pb-10 px-7 md:px-12 lg:px-[70px] bg-white max-h-[500px] overflow-y-scroll">
+                    <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-3">
+                        <h2 class="uppercase font-semibold text-2xl lg:max-w-[70%]">Seed Funding: Y combinators $ 3million to Promote E-learning platform</h2>
                         <div class="flex text-sm gap-3">
                             <img class="w-4" src="images/clock-dark.svg">
                             <p>Posted 12 hours ago</p>
@@ -766,43 +736,12 @@
                     </p>
                 </div>
             </div>
-              </div>
         </div>
-      </div>
+    </div>
 
-    <footer class="flex gap-16 px-14 md:px-20 md:flex-row mt-44 text-white lg:px-44 pb-28 justify-around flex-wrap lg:flex-nowrap">
-        
+    <footer class="mt-60">
+        <img class="w-full" src="images/footer.png">
     </footer>
-
-      <div class="modal micromodal-slide z-[3000] relative" id="news-modal" aria-hidden="true">
-        <div class="modal__overlay py-10" tabindex="-1" data-micromodal-close>
-          <div class="h-full" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
-              <div class="relative w-10/12 max-w-[83%] mx-auto h-full mb-20">
-                <img class="w-full max-h-[350px]" src="images/modal-img.png">
-                <div class="h-full pt-16 pb-10 px-[70px] bg-white max-h-[500px] overflow-y-scroll">
-                    <div class="flex justify-between items-center">
-                        <h2 class="uppercase font-semibold text-2xl max-w-[60%]">Seed Funding: Y combinators $ 3million to Promote E-learning platform</h2>
-                        <div class="flex text-sm gap-3">
-                            <img class="w-4" src="images/clock-dark.svg">
-                            <p>Posted 12 hours ago</p>
-                        </div>
-                    </div>
-                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit diam, imperdiet est suscipit arcu, volutpat. Neque congue congue egestas felis senectus purus ultrices id posuere. Nunc diam tortor est gravida. Est diam sit mus pharetra tortor elit tellus consequat, purus. Turpis pretium lorem mauris id vivamus netus commodo bibendum libero. In nec suscipit varius condimentum urna, vestibulum odio. Dapibus aliquam augue eget consequat. Convallis quis in mattis nisl fames. Porttitor cras semper at lectus nec vel, at vulputate dolor. Malesuada nulla penatibus volutpat, nisi, tristique amet pretium consectetur. A amet, pharetra dui dolor quam non vel.
-                        <br><br>
-                        Elit fames quis varius viverra. Vulputate pulvinar velit, sem placerat. Dui nam nibh at sem id in odio nulla commodo. Tortor, interdum nunc massa a aenean eget in. Massa neque quam nibh facilisi aliquet. Tincidunt integer euismod purus a. Nisi, et tempor, tellus quis nec. Facilisi neque eu, fusce egestas nec malesuada at.
-                        <br><br>
-                        Vel purus ultricies penatibus ipsum diam hac nunc. Facilisis quisque arcu blandit feugiat turpis sed lacus etiam gravida. Habitasse eget integer morbi aenean elit sit in facilisis. Pellentesque vulputate amet, cursus porta a risus enim. Habitasse enim, et odio in. Massa adipiscing enim, hac aliquam nisi mattis. Purus augue congue nunc elementum dictum vitae tortor praesent et. Convallis nibh curabitur in est tempor mi dui morbi nec. Laoreet amet diam egestas ac nam ut. Proin aenean et ut nulla nibh.</p>
-                        <br><br>
-                        Elit fames quis varius viverra. Vulputate pulvinar velit, sem placerat. Dui nam nibh at sem id in odio nulla commodo. Tortor, interdum nunc massa a aenean eget in. Massa neque quam nibh facilisi aliquet. Tincidunt integer euismod purus a. Nisi, et tempor, tellus quis nec. Facilisi neque eu, fusce egestas nec malesuada at.
-                        <br><br>
-                        Vel purus ultricies penatibus ipsum diam hac nunc. Facilisis quisque arcu blandit feugiat turpis sed lacus etiam gravida. Habitasse eget integer morbi aenean elit sit in facilisis. Pellentesque vulputate amet, cursus porta a risus enim. Habitasse enim, et odio in. Massa adipiscing enim, hac aliquam nisi mattis. Purus augue congue nunc elementum dictum vitae tortor praesent et. Convallis nibh curabitur in est tempor mi dui morbi nec. Laoreet amet diam egestas ac nam ut. Proin aenean et ut nulla nibh.</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
