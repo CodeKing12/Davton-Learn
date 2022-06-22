@@ -644,6 +644,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: -2rem;
 }
 
+.-my-7{
+  margin-top: -1.75rem;
+  margin-bottom: -1.75rem;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -738,6 +743,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-36{
   margin-top: 9rem;
+}
+
+.-mt-7{
+  margin-top: -1.75rem;
 }
 
 .block{
@@ -1387,6 +1396,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!text-\[33px\]{
   font-size: 33px !important;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-normal{

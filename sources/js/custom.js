@@ -79,7 +79,14 @@ for (i=0; i<accordion.length; i++) {
   })
 }
 function showNotification(notif) {
-    notification = document.getElementsByClassName(`.${notif}`);
-    content = notification.children[1];
-    content.classList.add("show-acc");
+    // document.querySelector(`.${notif}`).sh
+    // let notification = document.querySelector(`.${notif}`);
+    // let content = document.querySelector(`.${notif}-content`);
+    // if (content.classList.contains("show-acc")) {
+    //     document.querySelector(`.${notif}-preview`).classList.remove('hide-preview');
+    //     content.classList.remove("show-acc");
+    // } else {
+    //     document.querySelector(`.${notif}-preview`).classList.add('hide-preview');
+    //     content.classList.add("show-acc");
+    // }
 }

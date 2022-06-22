@@ -918,14 +918,13 @@
                             <tbody>
                                 <tr>
                                     <td class="bg-[rgba(200,200,200,1)] p-3 rounded-full w-11 flex justify-center"><img src="images/bell.svg"></td>
-                                    <td>
+                                    <td class="notificat-1">
                                         <p class="mb-2">DavtonLMS Payment Receipt</p>
-                                        <p class="text-[rgba(142,142,142,1)] text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc...</p>
-                                        <p class="text-[rgba(142,142,142,1)] content text-sm h-0 w-0 invisible opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc. </p>
+                                        <p class="text-[rgba(142,142,142,1)] text-sm notificat-1-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc...</p>
                                     </td>
-                                    <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
-                                    <td class="font-medium notificat-1">
-                                        <div class="flex flex-nowrap cursor-pointer" onclick="showNotification('notificat-1')">
+                                    <td class="text-sm text-[rgba(142,142,142,1)]"><p>5 Minutes ago</p></td>
+                                    <td class="font-medium">
+                                        <div class="flex flex-nowrap cursor-pointer" onclick="showNotification('notificat-1')" data-micromodal-trigger="notification-details">
                                             View
                                             <img class="inline-block ml-1" src="images/down-caret.svg">
                                         </div>
@@ -1031,6 +1030,31 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide font-poppins font-regular text-base" id="notification-details" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <!-- w-[85%] sm:w-[80%] lg:w-[77%] xl:w-[68%] -->
+            <div class="modal__container bg-white max-w-[95%] max-h-[90%] my-auto h-full rounded-md w-11/12" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+                <div class="w-full bg-white px-8 md:px-10 lg:px-12 xl:px-16 py-10 overflow-y-scroll max-h-full">
+                    <div class="flex justify-between">
+                        <h3 class="font-light mb-8 text-4xl">Notifications</h3>
+                        <span class="material-symbols-outlined cursor-pointer !text-[32px]" data-micromodal-close>
+                            close
+                        </span>
+                    </div>
+                    <div class="">
+                        <h3 class="text-3xl">DavtonLMS Payment Receipt</h3>
+                        <p>
+                            Hello Tobi,
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum accumsan, nunc condimentum semper convallis rhoncus lectus sollicitudin lobortis. In risus urna, ac risus faucibus pharetra, placerat eget. Id nisl adipiscing aliquet neque sit amet. Volutpat vestibulum, volutpat, interdum nulla orci ut euismod. Pharetra malesuada lorem ac nunc nullam quis. Enim, odio maecenas auctor sit tortor dui neque sagittis. Habitant vitae pharetra, dictum odio. Pretium dictum venenatis amet tincidunt quam felis, in. Purus at tincidunt gravida morbi ultricies laoreet pellentesque fames. Sed quam nec placerat eu facilisis at amet, purus aliquet. Proin nullam feugiat risus risus morbi condimentum aliquet eu lacinia. Cras viverra ut in morbi vulputate. Turpis tortor porta mi bibendum arcu in ipsum, feugiat.
+Tellus scelerisque interdum quis interdum pretium. Magna egestas massa tellus eu. Vitae pellentesque malesuada amet etiam eros. Mauris gravida sit a justo, odio lacus, diam quisque. Vel fermentum at pellentesque volutpat pretium magnis. Est erat dui sed mauris, sed id. Arcu, fringilla imperdiet faucibus gravida tellus tortor. Justo, ullamcorper bibendum dolor mi mi, leo. Neque morbi at duis ultrices eget. Egestas sem et at et amet condimentum leo, mauris vestibulum. Nulla quisque sit non nunc morbi. A sed ornare donec eu aenean consectetur morbi neque sagittis. Turpis phasellus amet mus integer arcu. Pellentesque tincidunt sed ipsum aliquam nam rhoncus. Sed euismod vitae lorem velit dictumst neque, tortor, amet, et.
+Adipiscing volutpat, morbi consectetur porta semper. Ultrices potenti convallis in tempus enim, sapien neque. Tempor ut urna, malesuada arcu lectus gravida. Dignissim tincidunt donec sit tristique rutrum dolor aliquam. E
+                        </p>
                     </div>
                 </div>
             </div>
