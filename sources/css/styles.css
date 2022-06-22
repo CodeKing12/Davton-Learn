@@ -1377,6 +1377,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 40px !important;
 }
 
+.\!text-\[34px\]{
+  font-size: 34px !important;
+}
+
+.\!text-\[33px\]{
+  font-size: 33px !important;
+}
+
 .font-normal{
   font-weight: 400;
 }
@@ -1411,6 +1419,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-loose{
   line-height: 2;
+}
+
+.leading-none{
+  line-height: 1;
 }
 
 .text-white{
