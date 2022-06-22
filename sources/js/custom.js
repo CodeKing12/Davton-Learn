@@ -70,3 +70,16 @@ $(".news-slider").slick({
     prevArrow: "<button class='flex absolute z-[200] top-0 bottom-0 left-0 h-full w-12 px-1 items-center justify-center py-[6px] next-arrow text-white transition-all duration-100 ease-linear hover:duration-150 group'><span class='material-symbols-outlined !text-3xl group-hover:!text-4xl transition-all duration-150 ease hover:duration-150 !hidden'>arrow_back_ios</span></button>",
     nextArrow: "<button class='flex absolute z-[100] top-0 bottom-0 right-0 h-full w-12 px-1 items-center justify-center py-[6px] next-arrow text-white transition-all duration-100 ease-linear hover:duration-150 group'><span class='material-symbols-outlined !text-3xl group-hover:!text-4xl transition-all duration-150 ease hover:duration-150 !hidden'>arrow_forward_ios</span></button>",
 })
+
+const accordion = document.getElementsByClassName('container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+function showNotification(notif) {
+    notification = document.getElementsByClassName(`.${notif}`);
+    content = notification.children[1];
+    content.classList.add("show-acc");
+}
