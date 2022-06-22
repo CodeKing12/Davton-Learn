@@ -28,7 +28,7 @@
                 <!-- <span class="material-symbols-outlined cursor-pointer text-[27px] hide-xsm">
                     mail
                 </span> -->
-                <span class="material-symbols-outlined cursor-pointer text-[27px] !hidden xs:!inline-block" data-micromodal-trigger="notification-modal">
+                <span class="relative material-symbols-outlined cursor-pointer text-[27px] !hidden xs:!inline-block after:absolute after:w-3 after:h-3 after:bg-brand-pink after:rounded-full after:top-0 after:right-0" data-micromodal-trigger="notification-modal">
                     notifications
                 </span>
                 <div class="gap-2 items-center xl:flex hidden">
@@ -854,6 +854,9 @@
 
     <div class="modal micromodal-slide" id="video-modal" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <span class="material-symbols-outlined cursor-pointer !text-[40px] absolute top-7 right-8 bg-white border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white ease-linear duration-150 transition-all" data-micromodal-close>
+                close
+            </span>
             <div class="modal__container bg-white max-w-[95%] max-h-[95%] rounded-md w-[85%] sm:w-[80%] lg:w-[80%] xl:w-[80%] h-fit" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
                 <video class="w-full mx-auto" id="player" playsinline controls data-poster="images/modal-thumbnail.png">
                     <source src="/path/to/video.mp4" type="video/mp4" />
@@ -865,7 +868,10 @@
 
     <div class="modal micromodal-slide" id="news-modal" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container bg-white max-w-[95%] max-h-[95%] rounded-md w-[85%] sm:w-[80%] lg:w-[77%] xl:w-[68%] h-fit" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+            <span class="material-symbols-outlined cursor-pointer !text-[40px] absolute top-7 right-8 bg-white border-brand-pink text-brand-pink hover:bg-brand-pink hover:text-white ease-linear duration-150 transition-all" data-micromodal-close>
+                close
+            </span>
+            <div class="modal__container bg-white max-w-[95%] max-h-[95%] rounded-md w-[85%] sm:w-[80%] lg:w-[77%] xl:w-[68%] h-fit relative" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
                 <img class="w-full object-cover h-[35vh]" src="images/modal-img.png">
                 <div class="w-full h-[60vh] pt-10 pb-10 px-7 md:px-12 lg:px-[70px] bg-white max-h-[500px] overflow-y-scroll">
                     <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-3">
@@ -893,33 +899,23 @@
     <div class="modal micromodal-slide font-poppins font-regular text-base" id="notification-modal" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <!-- w-[85%] sm:w-[80%] lg:w-[77%] xl:w-[68%] -->
-            <div class="modal__container bg-white max-w-[95%] max-h-[95%] h-full rounded-md w-11/12" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
-                <div class="w-full bg-white px-16 py-10">
-                    <h3 class="font-light mb-8 text-4xl">Notifications</h3>
-                    <!-- <div class="grid grid-cols-12 w-full">
-                        <div class="col-span-1">
-                            <p class="text-sm">Type</p>
-                            <img class="">
-                        </div>
-                        <div class="col-span-7">
-                            <p class="text-sm">Subject</p>
-                        </div>
-                        <div class="col-span-2">
-                            <p class="text-sm">Date</p>
-                        </div>
-                        <div class="col-span-2">
-                            <p class="text-sm">View</p>
-                        </div>
-                    </div> -->
+            <div class="modal__container bg-white max-w-[95%] max-h-[90%] my-auto h-full rounded-md w-11/12" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+                <div class="w-full bg-white px-8 md:px-10 lg:px-12 xl:px-16 py-10 overflow-y-scroll max-h-full">
+                    <div class="flex justify-between">
+                        <h3 class="font-light mb-8 text-4xl">Notifications</h3>
+                        <span class="material-symbols-outlined cursor-pointer !text-[32px]" data-micromodal-close>
+                            close
+                        </span>
+                    </div>
                     <div class="-mx-10 -my-8">
-                        <table cellspacing="12" class="w-full table-auto text-left border-separate notifications-table">
+                        <table class="w-full table-auto text-left border-separate notifications-table">
                             <thead class="mb-10 text-sm font-regular">
                                 <th class="font-normal">Type</th>
                                 <th class="font-normal">Subject</th>
                                 <th class="font-normal">Date</th>
                                 <th class="font-normal">View</th>
                             </thead>
-                            <tbody class="overflow-scroll">
+                            <tbody>
                                 <tr>
                                     <td class="bg-[rgba(200,200,200,1)] p-3 rounded-full w-11 flex justify-center"><img src="images/bell.svg"></td>
                                     <td>
@@ -928,8 +924,10 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -940,8 +938,10 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -952,8 +952,10 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -964,8 +966,10 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -976,8 +980,10 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -988,8 +994,10 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -1000,8 +1008,24 @@
                                     </td>
                                     <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
                                     <td class="font-medium">
-                                        View
-                                        <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-[rgba(200,200,200,1)] p-3 rounded-full w-11 flex justify-center"><img src="images/bell.svg"></td>
+                                    <td>
+                                        <p class="mb-2">DavtonLMS Payment Receipt</p>
+                                        <p class="text-[rgba(142,142,142,1)] text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis malesuada enim est in nunc...</p>
+                                    </td>
+                                    <td class="text-sm text-[rgba(142,142,142,1)]">5 Minutes ago</td>
+                                    <td class="font-medium">
+                                        <div class="flex flex-nowrap">
+                                            View
+                                            <img class="inline-block ml-1" src="images/down-caret.svg">
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
