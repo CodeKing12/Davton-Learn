@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar::-webkit-scrollbar-thumb, #sidebar::-webkit-scrollbar-track, #sidebar::-webkit-scrollbar-track-piece {
+    display: none;
+    width: 0;
+}
+
 #review-modal > div > * {
     transition: all 0.4s ease-in-out 0.61s;
 }

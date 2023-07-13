@@ -14,50 +14,63 @@
       class="green-gradient-2 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]"
     >
       <div class="flex gap-3 items-center lg:gap-16">
-        <a><img src="../svg/logo.svg" /></a>
+        <a><img src="./images/dashboard/logo.svg" /></a>
         <img
           class="cursor-pointer"
-          src="../svg/menu.svg"
+          src="./images/dashboard/menu.svg"
           onclick="showSidebar(true)"
         />
       </div>
-      <div class="flex gap-[7px] leading-5 items-center">
-        <div
-          class="bg-white rounded-[5px] w-7 h-7 flex items-center justify-center"
-        >
-          <p>M</p>
-        </div>
-        <a class="text-white text-sm font-medium flex items-center gap-1.5">
-          <span class="hidden min-[410px]:inline"> Admin@hcp.com </span>
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#ffffff"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
-              stroke-width="3"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+      <div class="flex gap-7 leading-5 items-center">
+        <a>
+          <img width="22" src="./images/dashboard/mail.svg" />
         </a>
+        <a>
+          <img width="19" src="./images/dashboard/bell.svg" />
+        </a>
+        <div class="flex gap-[7px] items-center">
+          <div
+            class="bg-white text-brand-green rounded-full w-7 h-7 flex items-center justify-center"
+          >
+            <p>M</p>
+          </div>
+          <a class="text-white text-sm font-medium flex items-center gap-1.5">
+            <span class="hidden xs:inline"> Hr247@asanta.com </span>
+            <!-- <span class="hidden min-[410px]:inline"> Hr247@asanta.com </span> -->
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ffffff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </nav>
 
     <main id="main-el" class="flex mt-[60px] hide-sidebar">
+      <img
+        class="absolute top-0 right-0 w-full h-1.5 z-40"
+        src="./images/dashboard/top-rainbow.svg"
+      />
       <aside
         id="sidebar"
-        class="z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_rounded-5_7px_rgba(0,0,0,0.08)] fixed left-0"
+        class="z-50 pb-24 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_rounded-5_7px_rgba(0,0,0,0.08)] fixed left-0 overflow-y-scroll"
       >
         <div class="mb-[26px] px-7">
           <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
           <p class="text-[15px] font-light leading-5 text-grey-1">
-            Admin@hcp.com
+            Hr247@asanta.com
           </p>
         </div>
 
@@ -65,53 +78,63 @@
           class="py-[9px] mb-3.5 flex items-center pl-10 gap-3.5 text-brand-black text-[15px]"
           href="./dashboard.html"
         >
-          <img src="../svg/grid.svg" />
+          <img src="./images/dashboard/dashboard.svg" />
           Dashboard
         </a>
-        <p class="px-7 text-13 text-[#858585] mb-2.5">User Management</p>
-        <div class="flex flex-col gap-[3px] text-[15px]">
+        <p class="px-7 text-13 text-[#858585] mb-2">User Management</p>
+        <div class="flex flex-col gap-[3px] text-[15px] mb-5">
           <a
             class="flex items-center gap-3.5 py-[9px] pl-10"
             href="./customize.html"
           >
-            <img src="../svg/users.svg" />
-            User
+            <img src="./images/dashboard/staff.svg" />
+            Staff
           </a>
           <a class="flex items-center gap-3.5 py-[9px] pl-10">
-            <img src="../svg/users.svg" />
-            Learning Group
+            <img src="./images/dashboard/department.svg" />
+            Department
           </a>
           <a class="flex items-center gap-3.5 py-[9px] pl-10 active-dash">
-            <img src="../svg/course.svg" />
+            <img src="./images/dashboard/courses.svg" />
             Courses
           </a>
           <a
             class="flex items-center gap-3.5 py-[9px] pl-10"
             href="./create-course.html"
           >
-            <img src="../svg/course.svg" />
-            Courses Categories
+            <img src="./images/dashboard/reports.svg" />
+            Reports
           </a>
           <a
             class="flex items-center gap-3.5 py-[9px] pl-10"
             href="./testimonials.html"
           >
-            <img src="../svg/verified.svg" />
-            Testimonials
+            <img src="./images/dashboard/department.svg" />
+            Quizzes
           </a>
+        </div>
+        <p class="px-7 text-13 text-[#858585] mb-2">Communications</p>
+        <div class="flex flex-col gap-[3px] text-[15px] mb-5">
           <a class="flex items-center gap-3.5 py-[9px] pl-10">
-            <img src="../svg/analytics.svg" />
-            Reports
+            <img src="./images/dashboard/message.svg" />
+            Message
           </a>
+        </div>
+        <p class="px-7 text-13 text-[#858585] mb-2">Account Management</p>
+        <div class="flex flex-col gap-[3px] text-[15px]">
           <a
             class="flex items-center gap-3.5 py-[9px] pl-10"
             href="./settings.html"
           >
-            <img src="../svg/settings.svg" />
+            <img src="./images/dashboard/admins.svg" />
+            Admins
+          </a>
+          <a class="flex items-center gap-3.5 py-[9px] pl-10">
+            <img src="./images/dashboard/settings.svg" />
             Settings
           </a>
           <a class="flex items-center gap-3.5 py-[9px] pl-10">
-            <img src="../svg/users.svg" />
+            <img src="./images/dashboard/power-button-off.svg" />
             Log Out
           </a>
         </div>
@@ -429,5 +452,5 @@
       </section>
     </main>
   </body>
-  <script src="../js/hcp.js"></script>
+  <script src="./js/dashboard.js"></script>
 </html>

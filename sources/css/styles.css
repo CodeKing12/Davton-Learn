@@ -623,6 +623,14 @@ input, textarea, button{
   left: 0px;
 }
 
+.top-1\.5{
+  top: 0.375rem;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
 .z-50{
   z-index: 50;
 }
@@ -649,6 +657,10 @@ input, textarea, button{
 
 .z-\[100\]{
   z-index: 100;
+}
+
+.z-40{
+  z-index: 40;
 }
 
 .order-last{
@@ -787,10 +799,6 @@ input, textarea, button{
   margin-bottom: 0.875rem;
 }
 
-.mb-2\.5{
-  margin-bottom: 0.625rem;
-}
-
 .ml-\[260px\]{
   margin-left: 260px;
 }
@@ -801,6 +809,10 @@ input, textarea, button{
 
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.mt-1\.5{
+  margin-top: 0.375rem;
 }
 
 .block{
@@ -895,6 +907,10 @@ input, textarea, button{
 
 .h-\[186px\]{
   height: 186px;
+}
+
+.h-1\.5{
+  height: 0.375rem;
 }
 
 .max-h-\[95\%\]{
@@ -1210,10 +1226,6 @@ input, textarea, button{
   border-radius: 9999px;
 }
 
-.rounded-\[5px\]{
-  border-radius: 5px;
-}
-
 .rounded-10{
   border-radius: 10px;
 }
@@ -1496,6 +1508,10 @@ input, textarea, button{
   padding-top: 2.5rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -1720,6 +1736,11 @@ input, textarea, button{
   color: rgba(142,142,142,1);
 }
 
+.text-brand-green{
+  --tw-text-opacity: 1;
+  color: rgb(32 163 84 / var(--tw-text-opacity));
+}
+
 .text-mild-black{
   --tw-text-opacity: 1;
   color: rgb(72 71 71 / var(--tw-text-opacity));
@@ -1743,11 +1764,6 @@ input, textarea, button{
 .text-\[\#656972\]{
   --tw-text-opacity: 1;
   color: rgb(101 105 114 / var(--tw-text-opacity));
-}
-
-.text-brand-green{
-  --tw-text-opacity: 1;
-  color: rgb(32 163 84 / var(--tw-text-opacity));
 }
 
 .text-opacity-50{
@@ -1881,6 +1897,15 @@ input, textarea, button{
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(79 79 79 / var(--tw-text-opacity));
+}
+
+#sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+#sidebar::-webkit-scrollbar-thumb, #sidebar::-webkit-scrollbar-track, #sidebar::-webkit-scrollbar-track-piece {
+  display: none;
+  width: 0;
 }
 
 #review-modal > div > * {
@@ -2386,6 +2411,10 @@ input, textarea, button{
 @media (min-width: 350px){
   .xs\:\!inline-block{
     display: inline-block !important;
+  }
+
+  .xs\:inline{
+    display: inline;
   }
 }
 
