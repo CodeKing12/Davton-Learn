@@ -3,3 +3,176 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#review-modal > div > * {
+    transition: all 0.4s ease-in-out 0.61s;
+}
+
+.show-modal, .show-modal > div, .show-modal > div > * {
+    opacity: 1;
+    visibility: visible;
+}
+
+.show-modal {
+    transform: scaleX(1);
+}
+
+.show-modal > div {
+    transform: scaleY(1);
+}
+
+.hide-modal, .hide-modal > div, .hide-modal > div > * {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hide-modal {
+    transform: scaleX(0);
+    transition-delay: 0.8s;
+}
+
+.hide-modal > div {
+    transform: scaleY(0);
+    transition-delay: 0.4s;
+}
+
+.hide-modal > div > * {
+    transition-delay: 0s !important;
+}
+
+.hide-sidebar > #sidebar {
+    width: 0 !important;
+}
+
+.hide-sidebar > #main-content {
+    margin-left: 0 !important;
+}
+
+.hide-sidebar > #sidebar > * {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out opacity 0.3s;
+}
+
+.hide-sidebar #main-content {
+    width: 100%;
+}
+
+#sidebar {
+    transition: 0.6s ease-in-out width;
+}
+
+#main-content {
+    transition: 0.6s ease-in-out margin;
+}
+
+#sidebar > * {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out opacity 0.3s;
+}
+
+@layer base {
+    a, button {
+        @apply transition-all duration-200 ease-linear cursor-pointer
+    }
+
+    input, textarea, button {
+        @apply !outline-none
+    }
+}
+
+@layer utilities {
+    .company-color-gradient {
+        background: conic-gradient(from 180deg at 50% 50%, #CC15A4 0deg, #CC2015 51.71deg, #CC4115 111.38deg, #CC9915 155.14deg, #C8CC15 204.86deg, #9115CC 254.59deg, #15CC32 298.34deg, #CC1520 344.09deg, #CC15A4 360deg);
+    }
+
+    .outline-hover {
+        @apply hover:bg-brand-pink hover:text-white
+    }
+
+    .filled-hover {
+        @apply hover:bg-white hover:text-brand-pink
+    }
+
+    .green-gradient-2 {
+        background: linear-gradient(90deg, #20A354 50.85%, #14AD51 100%);
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .green-gradient {
+        background: linear-gradient(98.94deg, #20A354 1.5%, #16B074 99.55%);
+    }
+
+    .bluish-gradient {
+        background: linear-gradient(98.94deg, #107DD8 1.5%, #7173E0 99.55%);
+    }
+
+    .reddish-gradient {
+        background: linear-gradient(98.94deg, #DC356D 1.5%, #7460F4 99.55%);
+    }
+
+    .transparent-gradient {
+        background: linear-gradient(98.94deg, #FFFFFF 1.5%, #F2F2F2 99.55%);
+    }
+
+    .greyish-gradient {
+        background: linear-gradient(180deg, #D7D7D7 25.21%, rgba(215, 215, 215, 0.2) 66.13%, rgba(164, 164, 164, 0) 100%);
+    }
+
+    .courses-table tbody tr {
+        @apply h-[58px] border-b border-b-[#E2E2E2]
+    }
+
+    .courses-table td {
+        @apply text-black-2 text-xs leading-[18px]
+    }
+
+    .courses-table .id {
+        @apply !text-center pr-3
+    }
+
+    .courses-table .table-headings {
+        @apply pt-7 pb-2
+    }
+
+
+    .courses-table .table-headings th {
+        @apply text-black-2 font-medium text-13 leading-5 text-left pb-3 pt-6
+    }
+}
+
+@layer components {
+    .center-content {
+        @apply flex items-center justify-center
+    }
+
+    .active-dash {
+        @apply relative bg-[#F8F8F8] before:w-1 before:h-full before:absolute before:bg-[#20A354] before:left-0
+    }
+
+    .short-btn {
+        @apply bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-13 hover:bg-opacity-[0.85]
+    }
+
+    .btn {
+        @apply border bg-brand-pink border-brand-pink rounded-5 h-10 text-white leading-5 text-15
+    }
+
+    .custom-select-1 {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        /* optional: add a background image for the custom arrow */
+    }
+    .custom-select-1::after {
+        content: "";
+        background-image: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"/></svg>');;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        background-position: right center;
+        fill: #20A354;
+        /* optional: add some padding to the right of the select */
+        padding-right: 20px;         
+    }
+}
