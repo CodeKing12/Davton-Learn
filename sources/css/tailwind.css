@@ -4,6 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+#upload-modal > div > * {
+    transition: all 0.4s ease-in-out 0.61s;
+}
+
+.show-modal, .show-modal > div, .show-modal > div > * {
+    opacity: 1;
+    visibility: visible;
+}
+
+.show-modal {
+    transform: scaleX(1);
+}
+
+.show-modal > div {
+    transform: scaleY(1);
+}
+
+.hide-modal, .hide-modal > div, .hide-modal > div > * {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hide-modal {
+    transform: scaleX(0);
+    transition-delay: 0.8s;
+}
+
+.hide-modal > div {
+    transform: scaleY(0);
+    transition-delay: 0.4s;
+}
+
+.hide-modal > div > * {
+    transition-delay: 0s !important;
+}
+
 #sidebar::-webkit-scrollbar {
     display: none;
 }

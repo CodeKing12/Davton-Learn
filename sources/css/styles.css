@@ -623,14 +623,6 @@ input, textarea, button{
   left: 0px;
 }
 
-.top-1\.5{
-  top: 0.375rem;
-}
-
-.top-1{
-  top: 0.25rem;
-}
-
 .z-50{
   z-index: 50;
 }
@@ -651,16 +643,16 @@ input, textarea, button{
   z-index: 60;
 }
 
+.z-40{
+  z-index: 40;
+}
+
 .z-\[200\]{
   z-index: 200;
 }
 
 .z-\[100\]{
   z-index: 100;
-}
-
-.z-40{
-  z-index: 40;
 }
 
 .order-last{
@@ -685,6 +677,11 @@ input, textarea, button{
 .-my-8{
   margin-top: -2rem;
   margin-bottom: -2rem;
+}
+
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .mr-2{
@@ -811,8 +808,12 @@ input, textarea, button{
   margin-bottom: 5rem;
 }
 
-.mt-1\.5{
-  margin-top: 0.375rem;
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
+.mb-11{
+  margin-bottom: 2.75rem;
 }
 
 .block{
@@ -897,8 +898,16 @@ input, textarea, button{
   height: 1.75rem;
 }
 
+.h-1\.5{
+  height: 0.375rem;
+}
+
 .h-7\.5{
   height: 30px;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .h-36{
@@ -907,10 +916,6 @@ input, textarea, button{
 
 .h-\[186px\]{
   height: 186px;
-}
-
-.h-1\.5{
-  height: 0.375rem;
 }
 
 .max-h-\[95\%\]{
@@ -1045,6 +1050,10 @@ input, textarea, button{
   width: 30px;
 }
 
+.w-\[600px\]{
+  width: 600px;
+}
+
 .w-12{
   width: 3rem;
 }
@@ -1063,6 +1072,10 @@ input, textarea, button{
 
 .max-w-\[95\%\]{
   max-width: 95%;
+}
+
+.max-w-\[660px\]{
+  max-width: 660px;
 }
 
 .flex-1{
@@ -1234,6 +1247,10 @@ input, textarea, button{
   border-radius: 5px;
 }
 
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
 .rounded-l-5{
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -1289,6 +1306,16 @@ input, textarea, button{
   border-color: rgb(196 196 196 / var(--tw-border-opacity));
 }
 
+.border-\[\#E2E2E2\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(226 226 226 / var(--tw-border-opacity));
+}
+
+.border-\[\#4F4F4F\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(79 79 79 / var(--tw-border-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1330,6 +1357,10 @@ input, textarea, button{
 
 .bg-opacity-60{
   --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-70{
+  --tw-bg-opacity: 0.7;
 }
 
 .bg-cover{
@@ -1462,6 +1493,16 @@ input, textarea, button{
   padding-bottom: 9px;
 }
 
+.px-3\.5{
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1538,6 +1579,10 @@ input, textarea, button{
 
 .pr-5{
   padding-right: 1.25rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-left{
@@ -1794,6 +1839,12 @@ input, textarea, button{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[-5px_5px_25px_rgba\(0\2c 0\2c 0\2c 0\.06\)\]{
+  --tw-shadow: -5px 5px 25px rgba(0,0,0,0.06);
+  --tw-shadow-colored: -5px 5px 25px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .blur{
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1822,6 +1873,10 @@ input, textarea, button{
   transition-duration: 150ms;
 }
 
+.delay-300{
+  transition-delay: 300ms;
+}
+
 .duration-500{
   transition-duration: 500ms;
 }
@@ -1844,6 +1899,10 @@ input, textarea, button{
 
 .duration-150{
   transition-duration: 150ms;
+}
+
+.duration-\[400ms\]{
+  transition-duration: 400ms;
 }
 
 .ease-linear{
@@ -1897,6 +1956,42 @@ input, textarea, button{
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(79 79 79 / var(--tw-text-opacity));
+}
+
+#upload-modal > div > * {
+  transition: all 0.4s ease-in-out 0.61s;
+}
+
+.show-modal, .show-modal > div, .show-modal > div > * {
+  opacity: 1;
+  visibility: visible;
+}
+
+.show-modal {
+  transform: scaleX(1);
+}
+
+.show-modal > div {
+  transform: scaleY(1);
+}
+
+.hide-modal, .hide-modal > div, .hide-modal > div > * {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-modal {
+  transform: scaleX(0);
+  transition-delay: 0.8s;
+}
+
+.hide-modal > div {
+  transform: scaleY(0);
+  transition-delay: 0.4s;
+}
+
+.hide-modal > div > * {
+  transition-delay: 0s !important;
 }
 
 #sidebar::-webkit-scrollbar {
